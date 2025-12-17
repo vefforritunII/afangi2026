@@ -1,5 +1,5 @@
 
-![image](https://github.com/vefforritunII/afangi/blob/main/Myndir/vinnuflaedi.png)
+![image](../Myndir/vinnuflaedi.png)
 
 ---
 

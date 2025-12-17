@@ -1,7 +1,7 @@
 ## Verkefni 1
 
 - 15% af heildareinkunn
-- [Vinnuflæði](https://github.com/vefforritunII/afangi/blob/main/Vinnuflaedi.md) 
+- [Vinnuflæði](../Vinnuflaedi.md) 
   
 ---
 
@@ -17,7 +17,7 @@ Til að geta unnið með mikinn kóða og í hópvinnu þá er nauðsynlegt að 
 1. Búðu til [Github Project](https://github.com/features/issues). Veldu Team planning (Todo, In Progress, Done).
 
 #### Verkefnið
-Vinna skal verkefni 3 og 4 í áfanganum útfrá eftirfarandi [Git og Github vinnuflæði](https://github.com/vefforritunII/afangi/blob/main/Demo/Guide_vinnuflaedi.md).
+Vinna skal verkefni 3 og 4 í áfanganum útfrá eftirfarandi [Git og Github vinnuflæði](../Demo/Guide_vinnuflaedi.md).
 
 <br>
 

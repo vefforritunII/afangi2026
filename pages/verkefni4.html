@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verkefni 4 - Bakendi | Vefforritun II</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">
+        <span class="logo-text">VEF<span class="logo-accent">II</span></span>
+      </a>
+      <div class="nav-menu" id="nav-menu">
+        <a href="../index.html#nam" class="nav-link">Námsefni</a>
+        <a href="../index.html#verkefni" class="nav-link">Verkefni</a>
+        <a href="../index.html#synidaemi" class="nav-link">Sýnidæmi</a>
+        <a href="about.html" class="nav-link">Um áfangann</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-content">
+      <a href="../index.html#nam" class="mobile-link">Námsefni</a>
+      <a href="../index.html#verkefni" class="mobile-link">Verkefni</a>
+      <a href="../index.html#synidaemi" class="mobile-link">Sýnidæmi</a>
+      <a href="about.html" class="mobile-link">Um áfangann</a>
+    </div>
+  </div>
+
+  <main class="page">
+    <header class="page-header">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html">Forsíða</a>
+          <span>/</span>
+          <span>Verkefni</span>
+          <span>/</span>
+          <span>Verkefni 4</span>
+        </div>
+        <h1 class="page-title animate-fade-up">Verkefni 4</h1>
+        <p class="page-subtitle animate-fade-up delay-1">Bakendavefþróun - 35% af heildareinkunn</p>
+      </div>
+    </header>
+
+    <section class="page-content">
+      <div class="container">
+        <div class="content">
+          <p><em>Verkefni 3 og 4 eru unnin samhliða</em></p>
+
+          <hr>
+
+          <h2>Verkefnalýsing</h2>
+          <p>Smíða skal vefapp útfrá verkefnalýsingu (Verkefni 1). Metið er í þessum hluta vefapps bakendavinnslu á miðlara. Áhersla er lögð á samvinnu og sjálfstæðum vinnubrögðum.</p>
+
+          <h3>Verkþættir</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Verkþáttur</th>
+                <th>Vægi</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Gagnagrunnshönnun og uppsetning</strong></td>
+                <td>20%</td>
+              </tr>
+              <tr>
+                <td><strong>Gagnavinnsla</strong> (RESTful APIs, ORM)</td>
+                <td>30%</td>
+              </tr>
+              <tr>
+                <td><strong>Beining</strong> (routing)</td>
+                <td>10%</td>
+              </tr>
+              <tr>
+                <td><strong>Sérvirkni</strong></td>
+                <td>30%</td>
+              </tr>
+              <tr>
+                <td><strong>Uppsetning vefapps</strong> (kóðaskipulag, hýsing)</td>
+                <td>10%</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <hr>
+
+          <h2>Vinnufyrirkomulag</h2>
+          <p>Unnið verður eftir Agile <a href="https://www.scrum.org/learning-series/what-is-scrum/" target="_blank" rel="noopener">Scrum</a> aðferðafræði þar sem nemendur vinna í hópum og skipta verkum á milli sín.</p>
+
+          <ul>
+            <li>Fyrsti tími vikunnar útbúa nemendur <code>TODO</code> í <code>Github PROJECTS</code> fyrir vikuna.</li>
+            <li>Í síðasti tími vikunnar er stöðufundur með hópum og kennara þar sem farið er yfir <code>In Process / Done</code> í <code>Github Projects</code>.</li>
+            <li>Hver nemandi heldur auk þess dagbók fyrir sig til að halda utan um lærdóm og prófanir.</li>
+          </ul>
+
+          <hr>
+
+          <h2>Námsmat</h2>
+          <p>Einkunn er byggð á vinnuframlagi og ofangreindum verkþáttum.</p>
+
+          <h3>Vinnuframlag</h3>
+          <p>Fyrir hverja kennslustund (2 x 50 mín) sem nemandi mætir ekki í tíma á tímabilinu <strong>09.09 - 09.10</strong> dregst <strong>0,5</strong> frá einkunn hjá viðkomandi.</p>
+          <p><em>Þetta á ekki við ef nemandi er veikur, í árekstri eða með leyfi <strong>og</strong> með þeim skilyrðum að nemandi vinni upp tapið heima í <strong>sömu viku</strong> og geti sýnt fram á það með commits í Github.</em></p>
+
+          <h3>Einkunn fyrir hvern verkþátt</h3>
+          <table>
+            <thead>
+              <tr>
+                <th>Einkunn</th>
+                <th>Lýsing</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>10</strong></td><td>Lausn er vel útfærð</td></tr>
+              <tr><td><strong>7,5</strong></td><td>Lausn er útfærð vel að mestu leyti</td></tr>
+              <tr><td><strong>5</strong></td><td>Lausn er útfærð að nokkru leyti (helmingur er vel útfærður)</td></tr>
+              <tr><td><strong>2,5</strong></td><td>Lausn er stórlega ábótavant</td></tr>
+              <tr><td><strong>0</strong></td><td>Lausn vantar eða óunnin</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-text">VEF<span class="logo-accent">II</span></span>
+          <p class="footer-tagline">Vefforritun II - Tækniskólinn</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Námsefni</h4>
+            <a href="vinnuflaedi.html">Vinnuflæði</a>
+            <a href="hugmyndavinna.html">Hugmyndavinna</a>
+            <a href="vefthroun.html">Vefþróun</a>
+          </div>
+          <div class="footer-col">
+            <h4>Verkefni</h4>
+            <a href="verkefni1.html">Verkefni 1</a>
+            <a href="verkefni2.html">Verkefni 2</a>
+            <a href="verkefni3.html">Verkefni 3</a>
+            <a href="verkefni4.html">Verkefni 4</a>
+            <a href="verkefni5.html">Verkefni 5</a>
+          </div>
+          <div class="footer-col">
+            <h4>Auðlindir</h4>
+            <a href="guide.html">GitHub Guide</a>
+            <a href="userstories.html">Notendasögur</a>
+            <a href="nemendaverkefni.html">Sýnidæmi</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Tækniskólinn. Öll réttindi áskilin.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>

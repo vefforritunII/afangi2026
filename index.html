@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vefforritun II | Tækniskólinn</title>
+  <meta name="description" content="Vefforritun II - Fullstack vefþróun með nútíma tækni">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <span class="logo-text">VEF<span class="logo-accent">II</span></span>
+      </a>
+
+      <div class="nav-menu" id="nav-menu">
+        <a href="#nam" class="nav-link">Námsefni</a>
+        <a href="#verkefni" class="nav-link">Verkefni</a>
+        <a href="#synidaemi" class="nav-link">Sýnidæmi</a>
+        <a href="pages/about.html" class="nav-link">Um áfangann</a>
+      </div>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-content">
+      <a href="#nam" class="mobile-link">Námsefni</a>
+      <a href="#verkefni" class="mobile-link">Verkefni</a>
+      <a href="#synidaemi" class="mobile-link">Sýnidæmi</a>
+      <a href="pages/about.html" class="mobile-link">Um áfangann</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-badge animate-fade-up">Tækniskólinn 2025</div>
+      <h1 class="hero-title">
+        <span class="title-line animate-fade-up delay-1">Vefforritun</span>
+        <span class="title-line title-accent animate-fade-up delay-2">II</span>
+      </h1>
+      <p class="hero-subtitle animate-fade-up delay-3">
+        Fullstack vefþróun með nútíma tækni, Agile vinnubrögðum og hópvinnu
+      </p>
+      <div class="hero-cta animate-fade-up delay-4">
+        <a href="#verkefni" class="btn btn-primary">
+          <span>Skoða verkefni</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="#nam" class="btn btn-secondary">Námsefni</a>
+      </div>
+    </div>
+    <div class="hero-scroll animate-fade-up delay-5">
+      <span>Skruna niður</span>
+      <div class="scroll-indicator"></div>
+    </div>
+  </header>
+
+  <!-- Stats Section -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item animate-on-scroll">
+          <span class="stat-number">5</span>
+          <span class="stat-label">Verkefni</span>
+        </div>
+        <div class="stat-item animate-on-scroll">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">Hópvinna</span>
+        </div>
+        <div class="stat-item animate-on-scroll">
+          <span class="stat-number">15+</span>
+          <span class="stat-label">Nemendaverkefni</span>
+        </div>
+        <div class="stat-item animate-on-scroll">
+          <span class="stat-number">Agile</span>
+          <span class="stat-label">Vinnuaðferðir</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Námsefni Section -->
+  <section class="section section-dark" id="nam">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">01</span>
+        <h2 class="section-title">Námsefni</h2>
+        <p class="section-subtitle">Lærðu grunn og framhald í vefþróun</p>
+      </div>
+
+      <div class="cards-grid">
+        <a href="pages/vinnuflaedi.html" class="card animate-on-scroll">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M12 2v4m0 12v4M2 12h4m12 0h4"/>
+              <path d="M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Vinnuflæði</h3>
+          <p class="card-text">Git, GitHub og samvinna í hópum með Scrum aðferðum</p>
+          <span class="card-link">
+            Skoða
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </span>
+        </a>
+
+        <a href="pages/hugmyndavinna.html" class="card animate-on-scroll">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2a7 7 0 017 7c0 2.38-1.19 4.47-3 5.74V17a2 2 0 01-2 2h-4a2 2 0 01-2-2v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 017-7z"/>
+              <path d="M9 21h6M10 17v4M14 17v4"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Hugmyndavinna</h3>
+          <p class="card-text">Hönnunarhugsun, wireframes og prótótýpur í Figma</p>
+          <span class="card-link">
+            Skoða
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </span>
+        </a>
+
+        <a href="pages/vefthroun.html" class="card animate-on-scroll">
+          <div class="card-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M16 18l6-6-6-6M8 6l-6 6 6 6"/>
+            </svg>
+          </div>
+          <h3 class="card-title">Vefþróun</h3>
+          <p class="card-text">Rammar, CSS, JavaScript og fullstack tækni</p>
+          <span class="card-link">
+            Skoða
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Verkefni Section -->
+  <section class="section" id="verkefni">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">02</span>
+        <h2 class="section-title">Verkefni</h2>
+        <p class="section-subtitle">Fimm verkefni sem spanna alla önnina</p>
+      </div>
+
+      <div class="timeline">
+        <a href="pages/verkefni1.html" class="timeline-item animate-on-scroll">
+          <div class="timeline-marker">
+            <span class="timeline-number">01</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-weight">15%</div>
+            <h3 class="timeline-title">Git & GitHub</h3>
+            <p class="timeline-text">Skipulag, útgáfustýring og samvinna með Git</p>
+          </div>
+        </a>
+
+        <a href="pages/verkefni2.html" class="timeline-item animate-on-scroll">
+          <div class="timeline-marker">
+            <span class="timeline-number">02</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-weight">10%</div>
+            <h3 class="timeline-title">Hönnun & Skipulag</h3>
+            <p class="timeline-text">User stories, wireflows og prótótýpur</p>
+          </div>
+        </a>
+
+        <a href="pages/verkefni3.html" class="timeline-item animate-on-scroll">
+          <div class="timeline-marker">
+            <span class="timeline-number">03</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-weight">35%</div>
+            <h3 class="timeline-title">Framendi</h3>
+            <p class="timeline-text">UI/UX, CSS, JavaScript og responsive hönnun</p>
+          </div>
+        </a>
+
+        <a href="pages/verkefni4.html" class="timeline-item animate-on-scroll">
+          <div class="timeline-marker">
+            <span class="timeline-number">04</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-weight">35%</div>
+            <h3 class="timeline-title">Bakendi</h3>
+            <p class="timeline-text">Gagnagrunnur, API, routing og deployment</p>
+          </div>
+        </a>
+
+        <a href="pages/verkefni5.html" class="timeline-item animate-on-scroll">
+          <div class="timeline-marker">
+            <span class="timeline-number">05</span>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-weight">5%</div>
+            <h3 class="timeline-title">Kynning</h3>
+            <p class="timeline-text">Lokaframsetning og skýrsluskrif</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section class="section section-accent">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">Tækni</span>
+        <h2 class="section-title">Stafli</h2>
+        <p class="section-subtitle">Nútíma tækni og rammar</p>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-category animate-on-scroll">
+          <h4 class="tech-category-title">Framendi</h4>
+          <div class="tech-tags">
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">Next.js</span>
+            <span class="tech-tag">Vue.js</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">Tailwind CSS</span>
+            <span class="tech-tag">HTMX</span>
+          </div>
+        </div>
+
+        <div class="tech-category animate-on-scroll">
+          <h4 class="tech-category-title">Bakendi</h4>
+          <div class="tech-tags">
+            <span class="tech-tag">Flask</span>
+            <span class="tech-tag">Django</span>
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express</span>
+          </div>
+        </div>
+
+        <div class="tech-category animate-on-scroll">
+          <h4 class="tech-category-title">Gagnagrunnur</h4>
+          <div class="tech-tags">
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">SQLite</span>
+            <span class="tech-tag">Firebase</span>
+            <span class="tech-tag">Supabase</span>
+          </div>
+        </div>
+
+        <div class="tech-category animate-on-scroll">
+          <h4 class="tech-category-title">Verkfæri</h4>
+          <div class="tech-tags">
+            <span class="tech-tag">Git</span>
+            <span class="tech-tag">GitHub</span>
+            <span class="tech-tag">VS Code</span>
+            <span class="tech-tag">Figma</span>
+            <span class="tech-tag">Docker</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sýnidæmi Section -->
+  <section class="section" id="synidaemi">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <span class="section-label">03</span>
+        <h2 class="section-title">Sýnidæmi</h2>
+        <p class="section-subtitle">Verkefni nemenda úr áfanganum</p>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card animate-on-scroll">
+          <div class="project-year">2025</div>
+          <h3 class="project-title">Abyrgi</h3>
+          <p class="project-stack">Next.js, PostgreSQL, Supabase, Tailwind, Leaflet</p>
+        </div>
+
+        <div class="project-card animate-on-scroll">
+          <div class="project-year">2024</div>
+          <h3 class="project-title">Club Scout</h3>
+          <p class="project-stack">Next.js, PostgreSQL, Supabase, Custom CSS</p>
+        </div>
+
+        <div class="project-card animate-on-scroll">
+          <div class="project-year">2024</div>
+          <h3 class="project-title">Tilkynntu.is</h3>
+          <p class="project-stack">Django, Tailwind CSS, SQLite, HTMX</p>
+        </div>
+
+        <div class="project-card animate-on-scroll">
+          <div class="project-year">2024</div>
+          <h3 class="project-title">MyndaAlbum</h3>
+          <p class="project-stack">Next.js, TailwindCSS, Firebase</p>
+        </div>
+      </div>
+
+      <div class="section-cta animate-on-scroll">
+        <a href="pages/nemendaverkefni.html" class="btn btn-outline">
+          <span>Sjá öll verkefni</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Demo Section -->
+  <section class="section section-dark">
+    <div class="container">
+      <div class="demo-grid">
+        <div class="demo-content animate-on-scroll">
+          <span class="section-label">Leiðbeiningar</span>
+          <h2 class="section-title">Demo & Hjálp</h2>
+          <p class="demo-text">
+            Ítarlegar leiðbeiningar um Git vinnuflæði, notendasögur og Scrum aðferðir.
+          </p>
+          <div class="demo-links">
+            <a href="pages/guide.html" class="btn btn-primary">
+              <span>GitHub Vinnuflæði</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+            <a href="pages/userstories.html" class="btn btn-secondary">Notendasögur</a>
+          </div>
+        </div>
+        <div class="demo-visual animate-on-scroll">
+          <div class="code-window">
+            <div class="code-header">
+              <span class="code-dot"></span>
+              <span class="code-dot"></span>
+              <span class="code-dot"></span>
+            </div>
+            <pre class="code-content"><code>git checkout -b issue#1
+git add .
+git commit -m "feat: add login"
+git push origin issue#1
+# Create Pull Request</code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-text">VEF<span class="logo-accent">II</span></span>
+          <p class="footer-tagline">Vefforritun II - Tækniskólinn</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Námsefni</h4>
+            <a href="pages/vinnuflaedi.html">Vinnuflæði</a>
+            <a href="pages/hugmyndavinna.html">Hugmyndavinna</a>
+            <a href="pages/vefthroun.html">Vefþróun</a>
+          </div>
+          <div class="footer-col">
+            <h4>Verkefni</h4>
+            <a href="pages/verkefni1.html">Verkefni 1</a>
+            <a href="pages/verkefni2.html">Verkefni 2</a>
+            <a href="pages/verkefni3.html">Verkefni 3</a>
+            <a href="pages/verkefni4.html">Verkefni 4</a>
+            <a href="pages/verkefni5.html">Verkefni 5</a>
+          </div>
+          <div class="footer-col">
+            <h4>Auðlindir</h4>
+            <a href="pages/guide.html">GitHub Guide</a>
+            <a href="pages/userstories.html">Notendasögur</a>
+            <a href="pages/nemendaverkefni.html">Sýnidæmi</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Tækniskólinn. Öll réttindi áskilin.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

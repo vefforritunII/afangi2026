@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Vinnuflæði | Vefforritun II</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">
+        <span class="logo-text">VEF<span class="logo-accent">II</span></span>
+      </a>
+      <div class="nav-menu" id="nav-menu">
+        <a href="../index.html#nam" class="nav-link">Námsefni</a>
+        <a href="../index.html#verkefni" class="nav-link">Verkefni</a>
+        <a href="../index.html#synidaemi" class="nav-link">Sýnidæmi</a>
+        <a href="about.html" class="nav-link">Um áfangann</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-content">
+      <a href="../index.html#nam" class="mobile-link">Námsefni</a>
+      <a href="../index.html#verkefni" class="mobile-link">Verkefni</a>
+      <a href="../index.html#synidaemi" class="mobile-link">Sýnidæmi</a>
+      <a href="about.html" class="mobile-link">Um áfangann</a>
+    </div>
+  </div>
+
+  <main class="page">
+    <header class="page-header">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="../index.html">Forsíða</a>
+          <span>/</span>
+          <span>Leiðbeiningar</span>
+          <span>/</span>
+          <span>GitHub Vinnuflæði</span>
+        </div>
+        <h1 class="page-title animate-fade-up">GitHub Vinnuflæði</h1>
+        <p class="page-subtitle animate-fade-up delay-1">Skref-fyrir-skref leiðbeiningar um Git og GitHub með Scrum</p>
+      </div>
+    </header>
+
+    <section class="page-content">
+      <div class="container">
+        <div class="content">
+          <img src="../Myndir/vinnuflaedi.png" alt="Vinnuflæði diagram" style="margin-bottom: 2rem;">
+
+          <hr>
+
+          <h2>1. Initial Setup (Done Once)</h2>
+
+          <h3>Step 1: Create GitHub repository and add collaborators</h3>
+          <ol>
+            <li>Log in to GitHub and create a new repository.</li>
+            <li>Add collaborators and the teacher (read access) to the repository.</li>
+          </ol>
+
+          <h3>Step 2: Create a GitHub Project</h3>
+          <ol>
+            <li>Click the <strong>Projects</strong> tab in the repository.</li>
+            <li>Create a new Project using the <strong>Team planning</strong> template with columns: <code>TO DO</code>, <code>In Progress</code>, <code>Done</code>.</li>
+          </ol>
+
+          <hr>
+
+          <h2>2. Scrum Sprint Planning (TO DO)</h2>
+          <p><em>All Team Members</em></p>
+
+          <h3>Step 3: Move items to TO DO column</h3>
+          <p>At the start of the sprint, drag items you plan to work on into the <strong>TO DO</strong> column.</p>
+
+          <h3>Step 4: Convert items into Issues</h3>
+          <ol>
+            <li>Click the three dots on a Project item.</li>
+            <li>Select <strong>Convert to Issue</strong>.</li>
+            <li>Note the issue number (e.g., <code>#1</code>).</li>
+          </ol>
+
+          <h3>Step 5: Assign repository to the Issue</h3>
+          <p>Open the Issue and select the repository it belongs to.</p>
+
+          <h3>Step 6: Assign Issues to developers</h3>
+          <p>Open the Issue and assign it to a developer.</p>
+
+          <hr>
+
+          <h2>3. Developing an Issue (In Progress)</h2>
+
+          <h3>Step 7: Move items to In Progress column</h3>
+          <p>Once work starts, move the issue to the <strong>In Progress</strong> column.</p>
+
+          <h3>Step 8: Create a new branch from <code>main</code></h3>
+          <p>Create a branch named <code>issue#n</code> (where <code>n</code> is the issue number).</p>
+          <p>Example: <code>issue#1</code></p>
+
+          <pre><code>git checkout -b issue#1</code></pre>
+
+          <h3>Step 9: Work on the issue locally</h3>
+          <ul>
+            <li>Implement the required changes in your project files.</li>
+            <li>Save your changes and prepare them to be committed.</li>
+          </ul>
+
+          <pre><code>git add .
+git commit -m "feat: add login functionality"
+git push origin issue#1</code></pre>
+
+          <hr>
+
+          <h2>4. Completing Work on GitHub (Done)</h2>
+
+          <h3>Step 10: Merge issue branch into main</h3>
+          <ol>
+            <li>Create a Pull Request on GitHub.</li>
+            <li>Merge the <code>issue#n</code> branch into <code>main</code>.</li>
+            <li>Keep the branch after merging.</li>
+            <li>Move the Issue card to <strong>Done</strong>.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="logo-text">VEF<span class="logo-accent">II</span></span>
+          <p class="footer-tagline">Vefforritun II - Tækniskólinn</p>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>Námsefni</h4>
+            <a href="vinnuflaedi.html">Vinnuflæði</a>
+            <a href="hugmyndavinna.html">Hugmyndavinna</a>
+            <a href="vefthroun.html">Vefþróun</a>
+          </div>
+          <div class="footer-col">
+            <h4>Verkefni</h4>
+            <a href="verkefni1.html">Verkefni 1</a>
+            <a href="verkefni2.html">Verkefni 2</a>
+            <a href="verkefni3.html">Verkefni 3</a>
+            <a href="verkefni4.html">Verkefni 4</a>
+            <a href="verkefni5.html">Verkefni 5</a>
+          </div>
+          <div class="footer-col">
+            <h4>Auðlindir</h4>
+            <a href="guide.html">GitHub Guide</a>
+            <a href="userstories.html">Notendasögur</a>
+            <a href="nemendaverkefni.html">Sýnidæmi</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Tækniskólinn. Öll réttindi áskilin.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
