@@ -23,8 +23,7 @@
 ---
 
 ### 4. Mockups & Prototype _(ítarefni/má sleppa_)
-1. [Figma](https://www.figma.com/), [Figma interface handbook](https://designcode.io/figma-handbook-figma-interface), [Figma 101](https://designlab.com/figma-101-course/introduction-to-figma/)
-1. [Github Spark](https://github.com/features/spark)
+1. [Figma](https://www.figma.com/), [Figma interface handbook](https://designcode.io/figma-handbook-figma-interface), [Figma 101](https://designlab.com/figma-101-course/introduction-to-figma/) _(frír aðgangur)_
 
 <!--
    - [Ítarefni: Web Design: Wireframes to Prototypes (Coursera)](https://www.coursera.org/learn/web-design-wireframes-prototypes?action=enroll)
